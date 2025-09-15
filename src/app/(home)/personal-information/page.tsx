@@ -132,7 +132,7 @@ export default function PatientInformationForm() {
           <select
             id="sex"
             name="sex"
-            className="w-full px-3 py-2 shadow-md rounded-md  focus:outline-none focus:ring-blue-500 focus:border-blue-500"
+            className="w-full px-3 py-2 shadow-md rounded-md -webkit-appearance-none appearance-none focus:outline-none focus:ring-blue-500 focus:border-blue-500"
             value={formData.sex}
             onChange={handleChange}
           >
@@ -148,7 +148,7 @@ export default function PatientInformationForm() {
           <select
             id="marital-status"
             name="maritalStatus"
-            className="w-full px-3 py-2 shadow-md rounded-md  focus:outline-none focus:ring-blue-500 focus:border-blue-500"
+            className="w-full px-3 py-2 shadow-md rounded-md -webkit-appearance-none appearance-none focus:outline-none focus:ring-blue-500 focus:border-blue-500"
             value={formData.maritalStatus}
             onChange={handleChange}
           >
@@ -165,7 +165,7 @@ export default function PatientInformationForm() {
           <select
             id="blood-group"
             name="bloodGroup"
-            className="w-full px-3 py-2 shadow-md rounded-md  focus:outline-none focus:ring-blue-500 focus:border-blue-500"
+            className="w-full px-3 py-2 shadow-md rounded-md  -webkit-appearance-none appearance-none focus:outline-none focus:ring-blue-500 focus:border-blue-500"
             value={formData.bloodGroup}
             onChange={handleChange}
           >
@@ -269,7 +269,7 @@ export default function PatientInformationForm() {
             <select
               id="state"
               name="state"
-              className="w-full px-3 py-2 shadow-md rounded-md  focus:outline-none focus:ring-blue-500 focus:border-blue-500"
+              className="w-full px-3 py-2 shadow-md rounded-md -webkit-appearance-none appearance-none  focus:outline-none focus:ring-blue-500 focus:border-blue-500"
               value={formData.state}
               onChange={handleChange}
             >

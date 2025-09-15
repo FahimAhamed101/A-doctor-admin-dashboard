@@ -231,7 +231,7 @@ export const AppointmentDetails: React.FC<AppointmentDetailsProps> = ({
           <button 
             type="button"
             onClick={() => router.push("/appointment/favourite")}
-            className="w-full py-2 px-4 bg-[#2E8BC9] hover:bg-blue-700 text-white font-medium rounded-md transition-colors"
+            className="w-full py-2 px-4 bg-[#2E8BC9] hover:bg-[#2E8BC9] text-white font-medium rounded-md transition-colors"
           >
           Book Appointment 
           </button>

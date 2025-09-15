@@ -293,7 +293,7 @@ export default function AppointmentDashboard() {
         )}
 
         {activeTab === "details" && selectedAppointmentData && (
-          <div className="bg-white shadow-sm border border-gray-200 rounded-lg mt-6">
+          <div className="flex justify-center">  <div className="bg-white w-2/4 shadow-sm border border-gray-200 rounded-lg mt-6">
             <div className="p-6">
               <div className="flex items-start justify-between mb-6">
                 <div className="flex items-center space-x-3">
@@ -451,7 +451,8 @@ export default function AppointmentDashboard() {
                 </div>
               </div>
             </div>
-          </div>
+          </div></div>
+        
         )}    
 
         {activeTab === "completed" && (
