@@ -134,8 +134,11 @@ export default function PatientInformationForm() {
             name="sex"
             className="w-full px-3 py-2 shadow-md rounded-md -webkit-appearance-none appearance-none focus:outline-none focus:ring-blue-500 focus:border-blue-500"
             value={formData.sex}
+             style={{ WebkitAppearance: "none", MozAppearance: "none" }}
             onChange={handleChange}
+            
           >
+            
             <option value="male">Male</option>
             <option value="female">Female</option>
             <option value="other">Other</option>
@@ -148,6 +151,7 @@ export default function PatientInformationForm() {
           <select
             id="marital-status"
             name="maritalStatus"
+             style={{ WebkitAppearance: "none", MozAppearance: "none" }}
             className="w-full px-3 py-2 shadow-md rounded-md -webkit-appearance-none appearance-none focus:outline-none focus:ring-blue-500 focus:border-blue-500"
             value={formData.maritalStatus}
             onChange={handleChange}
@@ -167,6 +171,7 @@ export default function PatientInformationForm() {
             name="bloodGroup"
             className="w-full px-3 py-2 shadow-md rounded-md  -webkit-appearance-none appearance-none focus:outline-none focus:ring-blue-500 focus:border-blue-500"
             value={formData.bloodGroup}
+              style={{ WebkitAppearance: "none", MozAppearance: "none" }}
             onChange={handleChange}
           >
             <option value="o-positive">O+</option>
@@ -269,6 +274,8 @@ export default function PatientInformationForm() {
             <select
               id="state"
               name="state"
+              
+               style={{ WebkitAppearance: "none", MozAppearance: "none" }}
               className="w-full px-3 py-2 shadow-md rounded-md -webkit-appearance-none appearance-none  focus:outline-none focus:ring-blue-500 focus:border-blue-500"
               value={formData.state}
               onChange={handleChange}
