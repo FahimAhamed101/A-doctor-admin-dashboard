@@ -356,7 +356,7 @@ const MedicalInformationPage = () => {
                               setNewAllergy({ name: "", severity: "" });
                               setAllergyModalOpen(false);
                             }}
-                            className="border border-text-secondary bg-white text-text-secondary hover:border-gray-400 font-medium"
+                            className="border border-text-secondary  text-text-secondary hover:border-gray-400 font-medium"
                           >
                             Cancel
                           </Button>
@@ -482,7 +482,7 @@ const MedicalInformationPage = () => {
                               setNewMedication({ name: "", frequency: "" });
                               setMedicationModalOpen(false);
                             }}
-                            className="border border-text-secondary bg-white text-text-secondary hover:border-gray-400 font-medium"
+                            className="border border-text-secondary  text-text-secondary hover:border-gray-400 font-medium"
                           >
                             Cancel
                           </Button>
@@ -582,7 +582,7 @@ const MedicalInformationPage = () => {
                             setNewCondition("");
                             setConditionModalOpen(false);
                           }}
-                          className="border border-text-secondary bg-white text-text-secondary hover:border-gray-400 font-medium"
+                          className="border border-text-secondary  text-text-secondary hover:border-gray-400 font-medium"
                         >
                           Cancel
                         </Button>
