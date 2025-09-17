@@ -186,9 +186,10 @@ export default function DoctorSearch() {
                 </button>
                 </Link>
               
+               <Link href="/doctor/details">
                 <button className="w-full shadow-md text-gray-700 py-2 px-4 rounded-lg font-medium hover:bg-gray-50 transition-colors duration-200">
                   Details
-                </button>
+                </button></Link>
               </div>
             </div>
           </div>
