@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "../globals.css";
 import { Sidebar } from "@/components/layout/Sidebar";
 import Link from "next/link";
+import { Alertbar } from "@/components/layout/Alertbar";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -39,52 +40,13 @@ export default function DashboardLayout({
             <div className="flex items-center justify-between">
               {/* Back Button */}
               <Link href="/dashboard">
-               <button className="p-2 hover:bg-gray-100 rounded-lg transition-colors hidden md:block">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M4 6V18" stroke="#3D3D3D" strokeWidth="1.5" strokeLinecap="round"/>
-<path d="M8 12.0005H20" stroke="#3D3D3D" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
-<path d="M12 8C12 8 8.00001 10.946 8 12C7.99999 13.0541 12 16 12 16" stroke="#3D3D3D" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
-</svg>
-
-              </button>
+               <h1 className="p-2 font-md text-[#2E8BC9]">Dashboard</h1>
               </Link>
              
 
               <div className="flex items-center justify-between w-[560px]">
                 {/* Search Bar */}
-                <div className="flex-1 bg-white max-w-xl rounded-lg mx-6 hidden md:block">
-                  <div className="relative rounded-lg">
-                    <div className="absolute inset-y-0 rounded-lg  left-0 pl-3 flex items-center pointer-events-none">
-                      <svg
-                        width="24"
-                        height="24"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M17 17L21 21"
-                          stroke="#3D3D3D"
-                          strokeWidth="1.5"
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                        />
-                        <path
-                          d="M19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19C15.4183 19 19 15.4183 19 11Z"
-                          stroke="#3D3D3D"
-                          strokeWidth="1.5"
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                        />
-                      </svg>
-                    </div>
-                    <input
-                      type="search"
-                      placeholder="Search for a doctor by name or discipline..."
-                      className="w-full pl-12 pr-4 px-5 py-4 shadow-md rounded-lg focus:outline-none focus:ring-1 focus:ring-gray-300 focus:border-text-primary placeholder:text-text-primary"
-                    />
-                  </div>
-                </div>
+             
                 <div className="flex items-center gap-3 mb-4 md:hidden">
                   <div className="w-9 h-9 bg-primary-500 rounded-full flex items-center justify-center">
                     <span className="text-white font-medium text-sm">Ma</span>
@@ -102,33 +64,7 @@ export default function DashboardLayout({
                 {/* Right side - Notifications and Profile */}
                 <div className="flex items-center gap-4">
                   {/* Notifications */}
-                  <button className="relative p-2 hover:bg-gray-100 rounded-lg transition-colors hidden md:block">
-                    <svg
-                      width="32"
-                      height="34"
-                      viewBox="0 0 32 34"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M12.0322 30.2324C13.0851 31.0548 14.4754 31.5549 15.9995 31.5549C17.5236 31.5549 18.914 31.0548 19.9668 30.2324"
-                        stroke="#3D3D3D"
-                        strokeWidth="2.66667"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                      />
-                      <path
-                        d="M16.0005 4.44531C16.5075 4.44531 17.006 4.48196 17.4927 4.55273C17.3895 5.0188 17.3335 5.50288 17.3335 6C17.3335 9.6819 20.3186 12.667 24.0005 12.667C24.6251 12.667 25.229 12.5786 25.8023 12.418C25.8985 12.9553 25.9516 13.5073 25.9517 14.0713C25.9518 15.4469 26.0346 16.7403 26.8638 17.9258C27.4969 18.8198 28.352 19.7355 28.5249 20.835C28.806 22.6242 27.5485 23.8664 26.0093 24.4854C20.1077 26.8583 11.8944 26.8583 5.99269 24.4854C4.45336 23.8664 3.19585 22.6243 3.47706 20.835C3.65001 19.7355 4.50512 18.8198 5.13819 17.9258C5.96731 16.7403 6.04919 15.4469 6.04933 14.0713C6.04953 8.75499 10.5049 4.4455 16.0005 4.44531Z"
-                        fill="#3D3D3D"
-                      />
-                      <circle
-                        cx="24.0003"
-                        cy="5.99935"
-                        r="5.33333"
-                        fill="#E63D75"
-                      />
-                    </svg>
-                  </button>
+                
                   {/* Mobile Notification Icon */}
                   <button className="relative p-2 rounded-lg transition-colors md:hidden -mt-4">
                     <svg
@@ -161,6 +97,8 @@ export default function DashboardLayout({
           {/* Page Content */}
           <main className="flex-1 overflow-y-auto">{children}</main>
         </div>
+    <Alertbar />
+
       </div>
     </div>
   );

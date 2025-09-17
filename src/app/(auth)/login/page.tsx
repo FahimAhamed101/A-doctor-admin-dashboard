@@ -71,7 +71,7 @@ const LoginPage = () => {
         console.log("Login attempt:", formData);
         setLoading(false);
         //route to home page
-        window.location.href = "/home"; // Uncomment this line to redirect after login
+        window.location.href = "/dashboard"; // Uncomment this line to redirect after login
       }, 500);
     }
   };
